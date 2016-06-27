@@ -1,0 +1,152 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E5E67547-0849-40D1-92CA-E9AAE82F6F92}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DesignPatterns</RootNamespace>
+    <AssemblyName>DesignPatterns</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AbstractFactory\Fabricas\FabricaMotoHonda.cs" />
+    <Compile Include="AbstractFactory\Fabricas\FabricaMotoYamaha.cs" />
+    <Compile Include="AbstractFactory\IFabricaDeMoto.cs" />
+    <Compile Include="AbstractFactory\IMotoLuxo.cs" />
+    <Compile Include="AbstractFactory\IMotoPopular.cs" />
+    <Compile Include="AbstractFactory\Motos\Honda1000cc.cs" />
+    <Compile Include="AbstractFactory\Motos\HondaBiz.cs" />
+    <Compile Include="AbstractFactory\Motos\Yamaha1000cc.cs" />
+    <Compile Include="AbstractFactory\Motos\YamahaYBR.cs" />
+    <Compile Include="Adapter\APIImagem\ImagemOpenGl.cs" />
+    <Compile Include="Adapter\APIImagem\ImageSurfaceSdl.cs" />
+    <Compile Include="Adapter\ImagemOpenGlAdapter.cs" />
+    <Compile Include="Adapter\ImagemSurfaceAdapter.cs" />
+    <Compile Include="Adapter\Interface\IImagem.cs" />
+    <Compile Include="Adapter\Interface\IImagemSurface.cs" />
+    <Compile Include="Facade\Facade_Exercicio\Entrega.cs" />
+    <Compile Include="Facade\Facade_Exercicio\OrdemPedido.cs" />
+    <Compile Include="Facade\Facade_Exercicio\Pagamento.cs" />
+    <Compile Include="Facade\Facade_Exercicio\VendaFacade.cs" />
+    <Compile Include="Facade\SistemaDeAudio.cs" />
+    <Compile Include="Facade\SistemaDeFisica.cs" />
+    <Compile Include="Facade\SistemaDeInput.cs" />
+    <Compile Include="Facade\SistemaDeVideo.cs" />
+    <Compile Include="Facade\SistemasFacade.cs" />
+    <Compile Include="FactoryMethod\CG150.cs" />
+    <Compile Include="FactoryMethod\EMotos.cs" />
+    <Compile Include="FactoryMethod\F800.cs" />
+    <Compile Include="FactoryMethod\Fabrica.cs" />
+    <Compile Include="FactoryMethod\FabricaCG150.cs" />
+    <Compile Include="FactoryMethod\FabricaF800.cs" />
+    <Compile Include="FactoryMethod\FabricaMoto.cs" />
+    <Compile Include="FactoryMethod\FabricaNinja250R.cs" />
+    <Compile Include="FactoryMethod\FabricaYBR.cs" />
+    <Compile Include="FactoryMethod\IMoto.cs" />
+    <Compile Include="FactoryMethod\Ninja250R.cs" />
+    <Compile Include="FactoryMethod\Restaurante\Carne.cs" />
+    <Compile Include="FactoryMethod\Restaurante\Churrasqueiro.cs" />
+    <Compile Include="FactoryMethod\Restaurante\Comida.cs" />
+    <Compile Include="FactoryMethod\Restaurante\Cozinheiro.cs" />
+    <Compile Include="FactoryMethod\Restaurante\Pizza.cs" />
+    <Compile Include="FactoryMethod\Restaurante\Pizzaiolo.cs" />
+    <Compile Include="FactoryMethod\Veiculo\Bicicleta.cs" />
+    <Compile Include="FactoryMethod\Veiculo\ConcreteVeiculoFactory.cs" />
+    <Compile Include="FactoryMethod\Veiculo\IFactory.cs" />
+    <Compile Include="FactoryMethod\Veiculo\Scooter.cs" />
+    <Compile Include="FactoryMethod\Veiculo\VeiculoFactory.cs" />
+    <Compile Include="FactoryMethod\YBR.cs" />
+    <Compile Include="PolimorfismoComInterface\Cinema.cs" />
+    <Compile Include="PolimorfismoComInterface\Crepusculo.cs" />
+    <Compile Include="PolimorfismoComInterface\IBilhete.cs" />
+    <Compile Include="PolimorfismoComInterface\Matrix.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Proxy\IImagem.cs" />
+    <Compile Include="Proxy\ImagemProxy.cs" />
+    <Compile Include="Proxy\ImagemReal.cs" />
+    <Compile Include="Proxy\Proxy_ExercicioDois\IMotorista.cs" />
+    <Compile Include="Proxy\Proxy_ExercicioDois\Motorista.cs" />
+    <Compile Include="Proxy\Proxy_ExercicioDois\MotoristaProxy.cs" />
+    <Compile Include="Proxy\Proxy_Exercicio\Car.cs" />
+    <Compile Include="Proxy\Proxy_Exercicio\Driver.cs" />
+    <Compile Include="Proxy\Proxy_Exercicio\ICar.cs" />
+    <Compile Include="Proxy\Proxy_Exercicio\ProxyCar.cs" />
+    <Compile Include="Singleton\Conexao.cs" />
+    <Compile Include="State\IMarioState.cs" />
+    <Compile Include="State\Mario.cs" />
+    <Compile Include="State\MarioBros.cs" />
+    <Compile Include="State\MarioFire.cs" />
+    <Compile Include="State\MarioGrande.cs" />
+    <Compile Include="State\MarioPequeno.cs" />
+    <Compile Include="State\State_Exercicio\Agendamento.cs" />
+    <Compile Include="State\State_Exercicio\Elaboracao.cs" />
+    <Compile Include="State\State_Exercicio\Execucao.cs" />
+    <Compile Include="State\State_Exercicio\Finalizacao.cs" />
+    <Compile Include="State\State_Exercicio\IOrdemServicoState.cs" />
+    <Compile Include="Strategy\Boleto\GeradorBoletoBB.cs" />
+    <Compile Include="Strategy\Boleto\GeradorBoletoBradesco.cs" />
+    <Compile Include="Strategy\Boleto\GeradorBoletoCaixa.cs" />
+    <Compile Include="Strategy\Boleto\GeradorBoletoContext.cs" />
+    <Compile Include="Strategy\Boleto\GeradorBoletoItau.cs" />
+    <Compile Include="Strategy\Boleto\IGeradorBoleto.cs" />
+    <Compile Include="Strategy\EnsaioPlanoManutencaoContext.cs" />
+    <Compile Include="Strategy\EquipamentoEnsaioPlanoManutencao.cs" />
+    <Compile Include="Strategy\FamiliaEnsaioPlanoManutencao.cs" />
+    <Compile Include="Strategy\IEnsaioPlanoManutencao.cs" />
+    <Compile Include="Strategy\LocalizacaoEnsaioPlanoManutencao.cs" />
+    <Compile Include="TemplateMethod\Violacao\Prestacao.cs" />
+    <Compile Include="TemplateMethod\Violacao\PrestacaoContratoEspecial.cs" />
+    <Compile Include="TemplateMethod\Violacao\PrestacaoContratoPadrao.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
